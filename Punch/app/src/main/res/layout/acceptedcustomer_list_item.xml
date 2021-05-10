@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/cardFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/card_stroke_frame"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/cardHoleFrame"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="8dp"
+            android:gravity="bottom"
+            android:background="@drawable/card_hole_frame"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/rewardPortion"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/rewards"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:text="Rewards Pending"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/holeFrame1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/holeFrame2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/customer_panel"
+            android:layout_marginLeft="1.2dp"
+            android:layout_marginRight="1.2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Customer Name"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="abc@gmail.com"
+                    android:singleLine="true"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

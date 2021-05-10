@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Punch it - Reward Cards</string>
+
+    <array name="menuOptions">
+        <item>My Customers</item>
+        <item>My Profile</item>
+        <item>Purchase Cards</item>
+        <item>Notifications</item>
+        <item>LOG OUT</item>
+    </array>
+
+    <array name="customerMenuOptions">
+        <item>My Cards</item>
+        <item>All Merchants</item>
+        <item>My Profile</item>
+        <item>LOG OUT</item>
+    </array>
+
+    <string name="InAppPurchaseKey">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvf16W4KzVMxGPG2nVJbP4AUq2JBr0DrNFkhhjZg/+6cqIaJMSazfzS96/OaXt3LuEYmJkcFKI1ABsCkIpeXQXMhKNZ9M2Uqg8bs5+8b80IbDn6yWbzq6XGK7dHg4oILVodCJey0XR5kMeaNOENPKnF4uRrfRfalkF6PmIJYrbBcMvlZ2B6Tw3yz1LAWyyV1pr/Q7AMI0TPLCXRoDIOvn0r+/PylEHY+C0Bpf9d3XvIkdX2AIijw9quxh3pgoyb3xwQx6TG/oB3NkQkYpC+xhvR2NxDs7iGDOSSm8cCuhPSqf1wSFGvSOV8+yJYSPw1D5IDCpxRaCMLv2l9FxrXluxQIDAQAB</string>
+</resources>

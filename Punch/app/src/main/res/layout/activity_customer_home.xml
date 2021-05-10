@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/customer_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:tag="@string/tag_menu"
+            app:footer="@layout/duo_view_footer"
+            app:header="@layout/duo_view_header"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:tag="@string/tag_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:hint="Search ..."
+                    android:drawableLeft="@drawable/search"
+                    android:drawablePadding="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/card_empty_stroke"/>
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/search"/>
+            </android.support.v7.widget.Toolbar>
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f5f5f5"/>
+        </LinearLayout>
+    </nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>
+    <FrameLayout
+        android:id="@+id/layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6c000000">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/alertDialog"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#fff"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:text="Your punch card accepted by BusiTest"
+            android:padding="15dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/okButton"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="#fd0dc2b9"
+                android:padding="8dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#fff"
+                android:text="OK"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

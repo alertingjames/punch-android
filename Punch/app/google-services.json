@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "870605109882",
+    "firebase_url": "https://punch-it-punchcard.firebaseio.com",
+    "project_id": "punch-it-punchcard",
+    "storage_bucket": "punch-it-punchcard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870605109882:android:1f2793977c811288",
+        "android_client_info": {
+          "package_name": "com.unitedwebspace.punchcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870605109882-rlklu3s00mcrrbp4dn7ne9ug7hrel2d5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbebZYLrqoGhBbsYF6WIHJ75s2N9y8n2c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unitedwebspace.punchcard.main.EditCardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:onClick="dismisFrame"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:text="Edit Your Punch Card"
+                    android:textColor="#7e6620"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="0px"
+                    android:layout_height="0px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+                    <EditText
+                        android:id="@+id/holePunches"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/inputbox_frame"
+                        android:hint="e.g. 5"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="8dp"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:textColor="#000"
+                        android:text="Hole Punches per Card"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/colorPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Select Color"
+                        android:textColor="#000"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:textSize="14sp" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:onClick="getColor"
+                        android:src="@drawable/ic_colorpickerpanel"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/logoPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:onClick="setupLogo"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Setup Logo"
+                        android:textColor="#000"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:textSize="14sp" />
+                    <ImageView
+                        android:id="@+id/checkMark"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/checkmark"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/businessFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:onClick="selectBusinessFont"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Select Business Font"
+                        android:textColor="#000"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rewardFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:onClick="selectRewardFont"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Select Reward Font"
+                        android:textColor="#000"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/cardFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/card_stroke_frame"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/cardHoleFrame"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="100dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="25dp"
+                        android:paddingBottom="8dp"
+                        android:gravity="bottom"
+                        android:background="@drawable/card_hole_frame"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/holeFrame1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="3dp"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/holeFrame2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="3dp"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="#fff"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/businessName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="14sp"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:maxLines="3"
+                                android:ellipsize="end"
+                                android:text="Business Name"
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/rewardName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="14sp"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:text="Reward"
+                                android:maxLines="3"
+                                android:ellipsize="end"
+                                android:layout_marginTop="3dp"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp">
+                            <TextView
+                                android:id="@+id/imageFrame"
+                                android:layout_width="103dp"
+                                android:layout_height="103dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/card_background_frame"/>
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+                                <com.android.volley.toolbox.NetworkImageView
+                                    android:id="@+id/cardLogoNet"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"/>
+                                <ImageView
+                                    android:id="@+id/cardLogo"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:visibility="gone"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"/>
+                            </FrameLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/nextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_shadow"
+                    android:gravity="center"
+                    android:onClick="done"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="DONE"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6c000000">
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/pictureItemFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="#fff"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select ..."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:onClick="takePhoto"
+            android:text="Take a photo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:onClick="pickPhoto"
+            android:text="Pick from Gallery"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="14dp"
+            android:onClick="dismisFrame"
+            android:textColor="#000"
+            android:text="Cancel"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fontList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center">
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:padding="10dp"
+            android:background="@drawable/card_stroke_frame"/>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.unitedwebspace.punchcard.main.ForgotPwdActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="FORGOT PASSWORD"
+        android:textColor="#7e6620"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:text="We just need your registered Email to send you password reset instruction"/>
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/inputbox_frame"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="#2e2e2e"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/signinButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_shadow"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="RESET PASSWORD"
+        android:textStyle="bold"
+        android:onClick="resetPassword"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="3" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

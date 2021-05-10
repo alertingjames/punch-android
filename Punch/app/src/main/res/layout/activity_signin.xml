@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout"
+    tools:context="com.unitedwebspace.punchcard.main.SigninActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="SIGN IN"
+        android:textColor="#7e6620"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/inputbox_frame"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="#2e2e2e"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputbox_frame"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="#2e2e2e"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_marginTop="50dp"
+        android:textColor="#7e6620"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:onClick="forgotPassword"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/signinButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_shadow"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="SIGN IN"
+        android:textStyle="bold"
+        android:onClick="signIn"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/gotosignup"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? SIGN UP"
+        android:layout_marginTop="30dp"
+        android:textColor="#7e6620"
+        android:textSize="14dp"
+        android:onClick="gotoSignup"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="3" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
